@@ -1033,11 +1033,6 @@ a13=str2num(handles.edit_a13.String);
 s_h11=mean(a11);
 s_h12=mean(a12);
 s_h13=mean(a13);
-
-disp(s_h11);
-disp(s_h12);
-disp(s_h13);
-
 set(handles.edit_s_h11,'string',s_h11);
 set(handles.edit_s_h12,'string',s_h12);
 set(handles.edit_s_h13,'string',s_h13);
@@ -1050,11 +1045,6 @@ a23=str2num(handles.edit_a23.String);
 s_h21=mean(a21);
 s_h22=mean(a22);
 s_h23=mean(a23);
-
-disp(s_h21);
-disp(s_h22);
-disp(s_h23);
-
 set(handles.edit_s_h21,'string',s_h21);
 set(handles.edit_s_h22,'string',s_h22);
 set(handles.edit_s_h23,'string',s_h23);
@@ -1067,11 +1057,6 @@ a33=str2num(handles.edit_a33.String);
 s_h31=mean(a31);
 s_h32=mean(a32);
 s_h33=mean(a33);
-
-disp(s_h31);
-disp(s_h32);
-disp(s_h33);
-
 set(handles.edit_s_h31,'string',s_h31);
 set(handles.edit_s_h32,'string',s_h32);
 set(handles.edit_s_h33,'string',s_h33);
@@ -1084,28 +1069,9 @@ a43=str2num(handles.edit_a43.String);
 s_h41=mean(a41);
 s_h42=mean(a42);
 s_h43=mean(a43);
-
-disp(s_h41);
-disp(s_h42);
-disp(s_h43);
-
 set(handles.edit_s_h41,'string',s_h41);
 set(handles.edit_s_h42,'string',s_h42);
 set(handles.edit_s_h43,'string',s_h43);
-% 
-% handles.s_h11=s_h11;
-% handles.s_h12=s_h12;
-% handles.s_h13=s_h13;
-% handles.s_h21=s_h21;
-% handles.s_h22=s_h22;
-% handles.s_h23=s_h23;
-% handles.s_h31=s_h31;
-% handles.s_h32=s_h32;
-% handles.s_h33=s_h33;
-% handles.s_h41=s_h41;
-% handles.s_h42=s_h42;
-% handles.s_h43=s_h43;
-% guidata(hObject, handles);
 
 
 function edit_wi_Callback(hObject, eventdata, handles)
@@ -1168,91 +1134,49 @@ function pushbutton_Caculate_thita_Callback(hObject, eventdata, handles)
 % A1 3-2-3
 wi=str2num(handles.edit_wi.String);
 wj=str2num(handles.edit_wj.String);
-disp(wi);
-disp(wj);
 thi_11=str2num(handles.edit_thi_11.String);
 thi_12=str2num(handles.edit_thi_12.String);
 thi_13=str2num(handles.edit_thi_13.String);
-disp(thi_11);
-disp(thi_12);
-disp(thi_13);
+
 thita_h11=wi(1)*wj(thi_11)/(wi(1)*wj(thi_11)+wi(2)*wj(thi_12)+wi(3)*wj(thi_13));
 thita_h12=wi(2)*wj(thi_12)/(wi(1)*wj(thi_11)+wi(2)*wj(thi_12)+wi(3)*wj(thi_13));
 thita_h13=wi(3)*wj(thi_13)/(wi(1)*wj(thi_11)+wi(2)*wj(thi_12)+wi(3)*wj(thi_13));
-
-disp(thita_h11);
-disp(thita_h12);
-disp(thita_h13);
-
 set(handles.edit_thita_h11,'string',thita_h11);
 set(handles.edit_thita_h12,'string',thita_h12);
 set(handles.edit_thita_h13,'string',thita_h13);
 
 % A2 2-4-2
-% wi=str2num(handles.edit_wi.String);
-% wj=str2num(handles.edit_wj.String);
-% disp(wi);
-% disp(wj);
 thi_21=str2num(handles.edit_thi_21.String);
 thi_22=str2num(handles.edit_thi_22.String);
 thi_23=str2num(handles.edit_thi_23.String);
-disp(thi_21);
-disp(thi_22);
-disp(thi_23);
+
 thita_h21=wi(1)*wj(thi_21)/(wi(1)*wj(thi_21)+wi(2)*wj(thi_22)+wi(3)*wj(thi_23));
 thita_h22=wi(2)*wj(thi_22)/(wi(1)*wj(thi_21)+wi(2)*wj(thi_22)+wi(3)*wj(thi_23));
 thita_h23=wi(3)*wj(thi_23)/(wi(1)*wj(thi_21)+wi(2)*wj(thi_22)+wi(3)*wj(thi_23));
-
-disp(thita_h21);
-disp(thita_h22);
-disp(thita_h23);
-
 set(handles.edit_thita_h21,'string',thita_h21);
 set(handles.edit_thita_h22,'string',thita_h22);
 set(handles.edit_thita_h23,'string',thita_h23);
 
 % A3 2-3-3
-% wi=str2num(handles.edit_wi.String);
-% wj=str2num(handles.edit_wj.String);
-% disp(wi);
-% disp(wj);
 thi_31=str2num(handles.edit_thi_31.String);
 thi_32=str2num(handles.edit_thi_32.String);
 thi_33=str2num(handles.edit_thi_33.String);
-disp(thi_31);
-disp(thi_32);
-disp(thi_33);
+
 thita_h31=wi(1)*wj(thi_31)/(wi(1)*wj(thi_31)+wi(2)*wj(thi_32)+wi(3)*wj(thi_33));
 thita_h32=wi(2)*wj(thi_32)/(wi(1)*wj(thi_31)+wi(2)*wj(thi_32)+wi(3)*wj(thi_33));
 thita_h33=wi(3)*wj(thi_33)/(wi(1)*wj(thi_31)+wi(2)*wj(thi_32)+wi(3)*wj(thi_33));
-
-disp(thita_h31);
-disp(thita_h32);
-disp(thita_h33);
-
 set(handles.edit_thita_h31,'string',thita_h31);
 set(handles.edit_thita_h32,'string',thita_h32);
 set(handles.edit_thita_h33,'string',thita_h33);
 
 % A4 3-2-3
-% wi=str2num(handles.edit_wi.String);
-% wj=str2num(handles.edit_wj.String);
-% disp(wi);
-% disp(wj);
 thi_41=str2num(handles.edit_thi_41.String);
 thi_42=str2num(handles.edit_thi_42.String);
 thi_43=str2num(handles.edit_thi_43.String);
-disp(thi_41);
-disp(thi_42);
-disp(thi_43);
+
 thita_h41=wi(1)*wj(thi_41)/(wi(1)*wj(thi_41)+wi(2)*wj(thi_42)+wi(3)*wj(thi_43));
 thita_h42=wi(2)*wj(thi_42)/(wi(1)*wj(thi_41)+wi(2)*wj(thi_42)+wi(3)*wj(thi_43));
 thita_h43=wi(3)*wj(thi_43)/(wi(1)*wj(thi_41)+wi(2)*wj(thi_42)+wi(3)*wj(thi_43));
-
-disp(thita_h41);
-disp(thita_h42);
-disp(thita_h43);
-
 set(handles.edit_thita_h41,'string',thita_h41);
 set(handles.edit_thita_h42,'string',thita_h42);
 set(handles.edit_thita_h43,'string',thita_h43);
@@ -1267,24 +1191,13 @@ function pushbutton_Caculate_h_Callback(hObject, eventdata, handles)
 h11=str2num(handles.edit_a11.String);
 h12=str2num(handles.edit_a12.String);
 h13=str2num(handles.edit_a13.String);
-disp(h11);
-disp(h12);
-disp(h13);
-
 thita_h11=str2num(handles.edit_thita_h11.String);
 thita_h12=str2num(handles.edit_thita_h12.String);
 thita_h13=str2num(handles.edit_thita_h13.String);
-disp(thita_h11);
-disp(thita_h12);
-disp(thita_h13);
 
 i=length(h11);
 j=length(h12);
 k=length(h13);
-disp(i);
-disp(j);
-disp(k);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
@@ -1321,24 +1234,13 @@ end
 h21=str2num(handles.edit_a21.String);
 h22=str2num(handles.edit_a22.String);
 h23=str2num(handles.edit_a23.String);
-disp(h21);
-disp(h22);
-disp(h23);
-
 thita_h21=str2num(handles.edit_thita_h21.String);
 thita_h22=str2num(handles.edit_thita_h22.String);
 thita_h23=str2num(handles.edit_thita_h23.String);
-disp(thita_h21);
-disp(thita_h22);
-disp(thita_h23);
 
 i=length(h21);
 j=length(h22);
 k=length(h23);
-disp(i);
-disp(j);
-disp(k);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
@@ -1372,24 +1274,13 @@ end
 h31=str2num(handles.edit_a31.String);
 h32=str2num(handles.edit_a32.String);
 h33=str2num(handles.edit_a33.String);
-disp(h31);
-disp(h32);
-disp(h33);
-
 thita_h31=str2num(handles.edit_thita_h31.String);
 thita_h32=str2num(handles.edit_thita_h32.String);
 thita_h33=str2num(handles.edit_thita_h33.String);
-disp(thita_h31);
-disp(thita_h32);
-disp(thita_h33);
 
 i=length(h31);
 j=length(h32);
 k=length(h33);
-disp(i);
-disp(j);
-disp(k);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
@@ -1425,24 +1316,13 @@ end
 h41=str2num(handles.edit_a41.String);
 h42=str2num(handles.edit_a42.String);
 h43=str2num(handles.edit_a43.String);
-disp(h41);
-disp(h42);
-disp(h43);
-
 thita_h41=str2num(handles.edit_thita_h41.String);
 thita_h42=str2num(handles.edit_thita_h42.String);
 thita_h43=str2num(handles.edit_thita_h43.String);
-disp(thita_h41);
-disp(thita_h42);
-disp(thita_h43);
 
 i=length(h41);
 j=length(h42);
 k=length(h43);
-disp(i);
-disp(j);
-disp(k);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
@@ -1474,11 +1354,6 @@ end
 % h4(16)=1-(1-h41(3))^(thita_h41)*(1-h42(2))^thita_h42*(1-h43(1))^thita_h43;
 % h4(17)=1-(1-h41(3))^(thita_h41)*(1-h42(2))^thita_h42*(1-h43(2))^thita_h43;
 % h4(18)=1-(1-h41(3))^(thita_h41)*(1-h42(2))^thita_h42*(1-h43(3))^thita_h43;
-
-disp(h1);
-disp(h2);
-disp(h3);
-disp(h4);
 
 set(handles.listbox_h1,'string',num2str(h1));
 set(handles.listbox_h2,'string',num2str(h2));
@@ -2010,12 +1885,6 @@ s_h1=mean(h1);
 s_h2=mean(h2);
 s_h3=mean(h3);
 s_h4=mean(h4);
-
-disp(s_h1);
-disp(s_h2);
-disp(s_h3);
-disp(s_h4);
-
 set(handles.edit_s_h1,'string',s_h1);
 set(handles.edit_s_h2,'string',s_h2);
 set(handles.edit_s_h3,'string',s_h3);
@@ -2120,25 +1989,10 @@ h2=str2num(handles.listbox_h2.String);
 h3=str2num(handles.listbox_h3.String);
 h4=str2num(handles.listbox_h4.String);
 
-% num1=sizeof(h1);
-% num2=sizeof(h2);
-% num3=sizeof(h3);
-% num4=sizeof(h4);
-% 
-% for i=1:num1
-%     sum=(h1(i)-h1(i+1))^2;
-% end
-
 thi_h1=std(h1);
 thi_h2=std(h2);
 thi_h3=std(h3);
 thi_h4=std(h4);
-
-disp(thi_h1);
-disp(thi_h2);
-disp(thi_h3);
-disp(thi_h4);
-
 set(handles.edit_thi_h1,'string',thi_h1);
 set(handles.edit_thi_h2,'string',thi_h2);
 set(handles.edit_thi_h3,'string',thi_h3);
@@ -2669,7 +2523,6 @@ if exist(string(outfile),'file')
     disp(['Error. \n This file already exists: ',string(outfile)]);
 else
     mkdir('./out');
-    
     newCell_title={'xuhao','x1','x2','x3',...
                's_x1','s_x2','s_x3','thi_x1','thi_x2','thi_x3',...
                'thita_x1','thita_x2','thita_x3','h','s_h','thi_h'};
@@ -3073,8 +2926,6 @@ set(handles.edit_thita_h12_L,'string',thita_h12);
 set(handles.edit_thita_h13_L,'string',thita_h13);
 
 % A2 2-4-2
-% wi=str2num(handles.edit_wi.String);
-% wj=str2num(handles.edit_wj.String);
 thi_21=str2num(handles.edit_thi_21_L.String);
 thi_22=str2num(handles.edit_thi_22_L.String);
 thi_23=str2num(handles.edit_thi_23_L.String);
@@ -3086,8 +2937,6 @@ set(handles.edit_thita_h22_L,'string',thita_h22);
 set(handles.edit_thita_h23_L,'string',thita_h23);
 
 % A3 2-3-3
-% wi=str2num(handles.edit_wi.String);
-% wj=str2num(handles.edit_wj.String);
 thi_31=str2num(handles.edit_thi_31_L.String);
 thi_32=str2num(handles.edit_thi_32_L.String);
 thi_33=str2num(handles.edit_thi_33_L.String);
@@ -3099,8 +2948,6 @@ set(handles.edit_thita_h32_L,'string',thita_h32);
 set(handles.edit_thita_h33_L,'string',thita_h33);
 
 % A4 3-2-3
-% wi=str2num(handles.edit_wi.String);
-% wj=str2num(handles.edit_wj.String);
 thi_41=str2num(handles.edit_thi_41_L.String);
 thi_42=str2num(handles.edit_thi_42_L.String);
 thi_43=str2num(handles.edit_thi_43_L.String);
@@ -3128,13 +2975,11 @@ thita_h13=str2num(handles.edit_thita_h13_L.String);
 i=length(h11);
 j=length(h12);
 k=length(h13);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
         for n3=1:k
             h1(n0)=1-(1-h11(n1))^(thita_h11)*(1-h12(n2))^thita_h12*(1-h13(n3))^thita_h13;
-            disp(n0);
             n0=n0+1;   
         end
     end
@@ -3151,13 +2996,11 @@ thita_h23=str2num(handles.edit_thita_h23_L.String);
 i=length(h21);
 j=length(h22);
 k=length(h23);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
         for n3=1:k
             h2(n0)=1-(1-h21(n1))^(thita_h21)*(1-h22(n2))^thita_h22*(1-h23(n3))^thita_h23;
-            disp(n0);
             n0=n0+1;   
         end
     end
@@ -3174,13 +3017,11 @@ thita_h33=str2num(handles.edit_thita_h33_L.String);
 i=length(h31);
 j=length(h32);
 k=length(h33);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
         for n3=1:k
             h3(n0)=1-(1-h31(n1))^(thita_h31)*(1-h32(n2))^thita_h32*(1-h33(n3))^thita_h33;
-            disp(n0);
             n0=n0+1;   
         end
     end
@@ -3197,22 +3038,15 @@ thita_h43=str2num(handles.edit_thita_h43_L.String);
 i=length(h41);
 j=length(h42);
 k=length(h43);
-% nn=i*j*k;
 n0=1;
 for n1=1:i
     for n2=1:j
         for n3=1:k
             h4(n0)=1-(1-h41(n1))^(thita_h41)*(1-h42(n2))^thita_h42*(1-h43(n3))^thita_h43;
-            disp(n0);
             n0=n0+1;   
         end
     end
 end
-
-disp(h1);
-disp(h2);
-disp(h3);
-disp(h4);
 
 set(handles.listbox_h1_L,'string',num2str(h1));
 set(handles.listbox_h2_L,'string',num2str(h2));
